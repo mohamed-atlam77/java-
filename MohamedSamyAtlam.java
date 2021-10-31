@@ -8,7 +8,7 @@ package miniproject;
  *
  * @author mohamed
  */
-public class MohamedSamyAtlam {
+public class Calculator {
     
     /**
      * Takes a radius of a circle and returns the area of that circle.
@@ -120,10 +120,10 @@ public class MohamedSamyAtlam {
         else
             f_num= num%i_num;
         
-        String i_result= MohamedSamyAtlam.decimalToOctal(i_num);
+        String i_result= Calculator.decimalToOctal(i_num);
         
         int temp_num = (int)(f_num * Math.pow(8, precision));
-        String f_result = MohamedSamyAtlam.decimalToOctal(temp_num);
+        String f_result = Calculator.decimalToOctal(temp_num);
         
         return i_result+"."+f_result;
     }
@@ -531,7 +531,7 @@ public class MohamedSamyAtlam {
     
     public static void main(String[] args){
         
-        /* This MohamedSamyAtlam can calculate:
+        /* This Calculator can calculate:
             - Area of a circle.
             - Area of a rectangle.
             - Lateral & Surface area of a cube. 
@@ -557,7 +557,7 @@ public class MohamedSamyAtlam {
                     ,{7,6}};
         int arr2[][]={{5,4}
                     ,{3,6}};
-        int arr3[][]=MohamedSamyAtlam.matrix(arr1, arr2, '+');
+        int arr3[][]=Calculator.matrix(arr1, arr2, '+');
         for(int i =0; i<arr3.length; i++){
             for(int j =0; j<arr3[0].length; j++){
                 System.out.println(arr3[i][j]);
