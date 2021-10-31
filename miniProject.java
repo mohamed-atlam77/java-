@@ -7,7 +7,7 @@
  *
  * @author mohamed
  */
-public class MohamedSamyAtlam {
+public class Calculator {
     
     /**
      * Takes a radius of a circle and returns the area of that circle.
@@ -119,10 +119,10 @@ public class MohamedSamyAtlam {
         else
             f_num= num%i_num;
         
-        String i_result= MohamedSamyAtlam.decimalToOctal(i_num);
+        String i_result= Calculator.decimalToOctal(i_num);
         
         int temp_num = (int)(f_num * Math.pow(8, precision));
-        String f_result = MohamedSamyAtlam.decimalToOctal(temp_num);
+        String f_result = Calculator.decimalToOctal(temp_num);
         
         return i_result+"."+f_result;
     }
